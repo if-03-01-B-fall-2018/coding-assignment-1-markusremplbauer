@@ -1,0 +1,30 @@
+body {
+    background: rgb(3, 24, 31);
+    font-family: sans-serif;
+}
+
+.header{
+    color: aquamarine;
+    font-size: 24px;
+}
+
+ol {
+    font-size: 24px;
+}
+p {
+    list-style-type: disc;
+    color: rgb(56, 134, 160);
+    font-size: 18px;
+}
+li{
+    color: rgb(94, 185, 155);
+    font-size: 20px;
+    display: block 
+}
+ol { 
+    counter-reset: item;
+}
+li:before { 
+    content: counters(item, ".") " "; 
+    counter-increment: item;
+}
